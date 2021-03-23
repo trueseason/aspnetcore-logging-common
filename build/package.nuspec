@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>AspNetCore.Logging.Common</id>
+        <version>1.0.0</version>
+        <description>AspNetCore.Logging.Common</description>
+        <authors>Singtone Contributors</authors>
+		<language>en-US</language>
+		<dependencies>
+			<group targetFramework="netcoreapp3.1">
+				<dependency id="Microsoft.AspNetCore.Mvc" version="2.2.0" exclude="all" />
+				<dependency id="Microsoft.Extensions.DependencyInjection" version="5.0.1" exclude="all" />
+				<dependency id="Microsoft.Extensions.Logging" version="5.0.0" exclude="all" />
+				<dependency id="Microsoft.IO.RecyclableMemoryStream" version="1.4.0" exclude="all" />
+			</group>
+		</dependencies>
+    </metadata>
+	<files>
+		<file src="AspNetCore.Auditing*.dll" target="lib\netcoreapp3.1" />
+		<file src="AspNetCore.Logging*.dll" target="lib\netcoreapp3.1" />
+	</files>
+</package>

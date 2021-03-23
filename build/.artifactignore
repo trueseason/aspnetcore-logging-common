@@ -1,0 +1,3 @@
+**/*
+!AspNetCore.Auditing*.dll
+!AspNetCore.Logging*.dll
