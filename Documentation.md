@@ -10,7 +10,9 @@ Install as a NuGet package: [AspNetCore.Logging.Common](https://www.nuget.org/pa
 
 ## Usage
 
-### `UseHttpLogging()`
+### Microsoft.AspNetCore.Builder.IApplicationBuilder Extensions
+
+##### `public static IApplicationBuilder UseHttpLogging(this IApplicationBuilder builder);`
 ```
 public void Configure(IApplicationBuilder app)
 {
@@ -27,7 +29,7 @@ Act as a ASP.NET Core Middleware to log the http request and response contents. 
 
 - Detailed contents are only logged when the log level is set to `Trace`.
 
-### `UseHttpAuditing()`
+##### `public static IApplicationBuilder UseHttpAuditing(this IApplicationBuilder builder);`
 ```
 public void Configure(IApplicationBuilder app)
 {
